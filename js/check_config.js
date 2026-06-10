@@ -7,7 +7,7 @@ const Log = require("logger");
 const rootPath = path.resolve(`${__dirname}/../`);
 const Utils = require(`${rootPath}/js/utils.js`);
 
-try {
+try { //
 	Utils.checkConfigFile();
 } catch (error) {
 	const message = error && error.message ? error.message : error;

@@ -2,5 +2,7 @@
 position: fixed !important;
 bottom: 20px;
 left: 50%;
-transform: translateX(-50%);
+transform: translateX(-50%); 
 }
+
+/*TODO: add a border to the profile picture, maybe a white one with 2px width?

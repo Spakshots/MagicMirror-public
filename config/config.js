@@ -1,10 +1,12 @@
+// this is a public repo which does not contain any personal information, or personal github tokens
+
 /* Config Sample
  *
  * For more information on how you can configure this file
  * see https://docs.magicmirror.builders/configuration/introduction.html
  * and https://docs.magicmirror.builders/modules/configuration.html
  *
- * You can use environment variables using a `config.js.template` file instead of `config.js`
+ * You can use environment  dfvariables using a `config.js.template` file instead of `config.js`
  * which will be converted to `config.js` while starting. For more information
  * see https://docs.magicmirror.builders/configuration/introduction.html#enviromnent-variables
  */
@@ -87,7 +89,7 @@ let config = {
 				weatherProvider: "openmeteo",
 				type: "current",
 				lat: 33,
-				lon: -118
+				lon: -118 //d 
 			}
 		},
 		{
@@ -97,7 +99,7 @@ let config = {
 		{
 			module: "MMM-Remote-Control",
 			position: "bottom_right",
-			config: {
+			config: { 
 				customCommand: {},
 				secureEndpoints: false,
 				classes: {
@@ -112,13 +114,13 @@ let config = {
 				}
 
 			}
-		},
+		}, // what the heck  k k ks k  fds sk d
 		{
     			module: "MMM-MOTD",
     			position: "bottom_bar"
 
 		},
-		{
+		{ 
 			module: "calendar",
 			classes:"camren",
 			header: "Camren's Calendar",
@@ -126,11 +128,11 @@ let config = {
 			config: {
 				calendars: [
 					{
-						fetchInterval: 15 * 60 * 1000,
+						fetchInterval: 3 * 60 * 1000,
 						symbol: "calendar-check",
 						url: ""}
 				]
-			}
+			} 
 		},
 		{
 			module: "MMM-FaceAnimation",
@@ -156,7 +158,7 @@ let config = {
 				githubRepo: "Obsidian",
 				githubBranch: "main",
 				githubPath: "brady/daily notes",
-				githubToken: "",
+				githubToken: "/*removed*/",
 				timeZone: "America/Los_Angeles",
 				updateInterval: 300000,
 				maxItems: 6,
@@ -167,5 +169,5 @@ let config = {
 	]
 };
 
-/*************** DO NOT EDIT THE LINE BELOW ***************/
+/*************** Please EDIT THE LINE BELOW ***************/
 if (typeof module !== "undefined") { module.exports = config; }
