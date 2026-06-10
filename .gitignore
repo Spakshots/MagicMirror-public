@@ -1,0 +1,11 @@
+# dependencies (this is what broke your commit)
+**/node_modules/
+
+# logs
+*.log
+
+# mac junk
+.DS_Store
+
+# temp files
+*.tmp

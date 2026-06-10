@@ -1,0 +1,22 @@
+cd ~/MagicMirror
+pm2 start npm --name 'magicmirror' -- start
+
+pm2 stop magicmirror
+
+pm2 logs magicmirror
+
+cat ~/MagicMirror/config/config.js
+
+ssh spakshots@192.168.86.108
+cat ~/MagicMirror/config/config.js
+
+curl http://localhost:8080/api/module
+
+cd ~/MagicMirror
+git add . 
+git commit -m "commit message"
+git push --force origin main
+
+git add -f config/config.js
+git commit -m "Add config.js"
+git push origin main

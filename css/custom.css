@@ -1,0 +1,21 @@
+.MMM-CircularProfilePic {
+    position: fixed !important;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.calendar {
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+}
+
+.MMM-FaceAnimation {
+    background-color: black !important;
+    position: fixed !important;
+    transition: opacity 1s ease !important;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+}
