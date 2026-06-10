@@ -9,6 +9,6 @@ const vendor = {
 	"croner.js": "node_modules/croner/dist/croner.umd.js"
 };
 
-if (typeof module !== "undefined") {
+if (typeof module !== "undefined") { // 
 	module.exports = vendor;
 }
