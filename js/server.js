@@ -15,7 +15,7 @@ const { getHtml, getVersion, getEnvVars, cors } = require("#server_functions");
 
 /**
  * Server
- * @param {object} configObj The MM config full and redacted
+ * @param {object} configObj The MM config full and redacted 
  * @class
  */
 function Server (configObj) {
@@ -46,8 +46,8 @@ function Server (configObj) {
 					credentials: true
 				},
 				allowEIO3: true,
-				pingInterval: 120000, // server → client ping every 2 mins
-				pingTimeout: 120000 // wait up to 2 mins for client pong
+				pingInterval: 120000, 
+				pingTimeout: 120000 
 			});
 
 			server.on("connection", (socket) => {
@@ -59,7 +59,6 @@ function Server (configObj) {
 
 			Log.log(`Starting server on port ${port} ... `);
 
-			// Add explicit error handling BEFORE calling listen so we can give user-friendly feedback
 			server.once("error", (err) => {
 				if (err && err.code === "EADDRINUSE") {
 					const bindAddr = config.address || "localhost";

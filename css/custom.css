@@ -17,5 +17,7 @@
     transition: opacity 1s ease !important;
     left: 50%;
     bottom: 80px;
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
 }
+
+
