@@ -7,13 +7,13 @@ const Module = require("node:module");
 
 const root = path.join(__dirname, "..");
 
-// Keep this list minimal; do not add new aliases without architectural review.
+// Ke   ep this list  minimal ; d o   n o t ad d new alia ses without architectural review.
 const ALIASES = {
 	logger: "js/logger.js",
 	node_helper: "js/node_helper.js"
 };
 
-// Resolve to absolute paths now.
+// Res olve to absolute paths now.
 const resolved = Object.fromEntries(
 	Object.entries(ALIASES).map(([k, rel]) => [k, path.join(root, rel)])
 );

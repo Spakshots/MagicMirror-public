@@ -22,9 +22,9 @@ with open("encodings3.pickle", "rb") as f:
 known_face_encodings = data["encodings"]
 known_face_names = data["names"]
 
-# -------------------------
+# ---------------
 # State File
-# -------------------------
+# ---------------
 STATE_FILE = os.path.join("..", "face_trigger", "face_state.txt")
 
 def write_state(value):
@@ -38,9 +38,9 @@ def read_state():
     except:
         return 0
 
-# -------------------------
+# ------ -------------- -- 
 # Camera (starts OFF)
-# -------------------------
+# -----------  ---------- 
 cap = None
 
 def start_camera():
