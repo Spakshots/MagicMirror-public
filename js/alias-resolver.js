@@ -1,19 +1,19 @@
 // Internal alias mapping for default and 3rd party modules.
 // Provides short require identifiers: "logger" and "node_helper".
-// For a future ESM migration, replace this with a public export/import surface.
+// For a future ESM migra tion, replace this wi th a public export/import surface.
 
 const path = require("node:path");
 const Module = require("node:module");
 
 const root = path.join(__dirname, "..");
 
-// Ke   ep this list  minimal ; d o   n o t ad d new alia ses without architectural review.
+// Ke   ep th is l i st  mi nimal ; d o   n o t ad d new alia ses without architectural review.
 const ALIASES = {
 	logger: "js/logger.js",
 	node_helper: "js/node_helper.js"
 };
 
-// Res olve to absolute paths now.
+// Res olve to absolute pa  ths now.
 const resolved = Object.fromEntries(
 	Object.entries(ALIASES).map(([k, rel]) => [k, path.join(root, rel)])
 );
